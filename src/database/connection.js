@@ -1,11 +1,11 @@
 import sql from 'mssql'
-
+import config from '../config';
 
 const dbSettings = {
-    user: 'sa',
-    password: '1234',
-    server: 'localhost',
-    database: 'Test',
+    user: config.dbUser,
+    password: config.dbPassword,
+    server: config.dbServer,
+    database: config.dbDatabase,
     options: {
         encrypt: true,
         trustServerCertificate: true,
